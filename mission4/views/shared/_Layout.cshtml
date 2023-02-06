@@ -1,0 +1,31 @@
+﻿<!--Mission05_mlabar26-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" href="~/img/snowboardicon.jpg" type="image/icon type"> <!--Adds icon to title-->
+    <link href="~/css/default.css" rel="stylesheet" /> <!--What I did to make the site look nice-->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> <!--Makes the site look nice-->
+</head>
+<body>
+    @*Helps move from page to page*@
+    <nav>
+        <a asp-controller="general" asp-action="Index">Home</a>
+        <a asp-controller="general" asp-action="gradeCalc">Calculate Your Grade</a>
+    </nav>
+
+    @*Inserts other views to*@
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--Javascript files to write and help build a nice looking page-->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+
+</body>
+</html>
